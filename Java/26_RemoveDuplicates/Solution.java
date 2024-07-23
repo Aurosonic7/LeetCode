@@ -4,7 +4,7 @@ public class Solution {
     if ( numbers.length == 0) return 0;
     int aux = 1;
     for (int i = 1; i < numbers.length; i++) 
-      if (numbers[i] != numbers[i - 1]) {
+      if (numbers[i-1] != numbers[i]) {
           numbers[aux] = numbers[i];
           aux++;
       }
